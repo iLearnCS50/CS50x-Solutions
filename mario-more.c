@@ -20,6 +20,7 @@ int main(void)
         {
             printf("#");
         }
+        //this prints the remaining part from mario-less
         printf("  ");
         for (int l = 0; l < i + 1; l++)
         {

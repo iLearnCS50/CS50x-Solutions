@@ -5,6 +5,8 @@
 #include <string.h>
 
 void endprog(void);
+//command-line argument format(argc stores the number of command line inputs and argv[]stores the inputs)
+//IMP:argc also counts ./{prog name} as an input and it is stored in argv[0]
 int main(int argc, string argv[])
 {
     if (argc != 2)

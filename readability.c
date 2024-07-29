@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
+//function calls(which pre-loads it and uses when called)
 int text_words(string text_);
 int text_sentences(string text_);
 int text_letters(string text_);
@@ -17,6 +18,7 @@ int main(void)
     no_letters = text_letters(text);
     sentences = text_sentences(text);
 
+    //the formulas used
     float L = (no_letters / (float) words) * 100.0;
     float S = (sentences / (float) words) * 100.0;
     int index = 0.0588 * L - 0.296 * S - 15.8;

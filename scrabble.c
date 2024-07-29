@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
+//the points for each alphabet(given){missed when solving}
 int points[] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
 int compute_score(string player);
 
@@ -32,16 +33,19 @@ int compute_score(string player)
     int total = 0;
     for (int i = 0; i < strlen(player); i++)
     {
+        //checks if the letter is upper-case
         if (isupper(player[i]))
         {
             score = points[player[i] - 'A'];
             total = total + score;
         }
+        //checks if the letter is lower-case
         else if (islower(player[i]))
         {
             score = points[player[i] - 'a'];
             total = total + score;
         }
+        //if none, it is ignored.
     }
     score = total;
     return score;
