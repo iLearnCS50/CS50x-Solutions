@@ -48,6 +48,7 @@ int main(int argc, string argv[])
     printf("%s\n", cipher);
 }
 
+//function definition(this can also be placed above main,and that would require the empty function call for initialisation)
 void endprog(void)
 {
     printf("Usage: ./caesar key\n");
